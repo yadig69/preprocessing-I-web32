@@ -56,4 +56,142 @@ table {
 html, body {
     height: 100%;
 }
+// variables 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Varela+Round&display=swap');
+
+// colors
+@image-bdc: #0dc2b3;
+@heading-bgc: #307672;
+@side-bgc: #144d53;
+@main-color: #e4eddb;
+@work-bgc: #385757;
+@h2Color: #0c3236;
+
+// font family settings
+@h1-font-size: 3rem;
+@main-font: 'Varela Round', sans-serif;
+@heading-font: 'montserrat', san-serif;
+
+//image styles
+
+@image-width: 200px;
+@image-height: 200px;
+
+// div styles
+
+
+@main-width: 100%;
+@main-height: 200px;
+
+@side-width: 20%;
+@side-height: 1400px;
+
+
+
+@line-height: 2;
+
+
+//side content
+@work-width: 80%;
+@work-height: relative;
+
+
+
+.container {
+	// display: flex;
+}
+
+main {
+	display: flex;
+}
+
+.header-container {
+	width: @main-width;
+	height: @main-height;
+	padding: 50px;
+	background-color: @heading-bgc;
+	display: flex;
+	justify-content: space-around;
+	justify-content: center;
+
+}
+
+h1 {
+	color: @main-color;
+	font-family: @heading-font;
+	font-size: @h1-font-size;
+	display: flex;
+	justify-content: center;
+
+}
+
+h2 {
+	font-family: @main-font;
+	font-size: 1.5rem;
+	line-height: 2.5;
+	color: @h2Color;
+}
+
+.image-container {
+	margin: -120px 0 0 50px;
+	width: @image-width;
+	height: @image-height;
+	position: absolute;
+	z-index: 2;
+	background-image: url("itsme.jpg");
+	background-color: @image-bdc;
+	border-radius: 10px;
+	display: flex;
+
+}
+
+.side-container {
+	margin: 0 0 60px 20px;
+	width: @side-width;
+	height: @side-height;
+	position: absolute;
+	z-index: 1;
+	background-color: @side-bgc;
+
+}
+
+// img {
+// width:200px;
+// height:200px;
+// }
+
+.side-content {
+	font-family: @main-font;
+	margin-top: -25%;
+	padding: 65% 10% 1.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	align-content: space-around;
+	
+}
+
+.right-container {
+	width: @work-width;
+	height: @work-height;
+	
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	background-color: @work-bgc;
+
+	.box {
+		width: 300px;
+		height: 300px;
+		padding: 1.5%;
+		margin: 10% 50%;
+		background-color: @image-bdc ;
+
+
+	}
+
+}

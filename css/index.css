@@ -1,1 +1,220 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZOg3D-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
+}
+main {
+  display: flex;
+}
+.header-container {
+  width: 100%;
+  height: 200px;
+  padding: 50px;
+  background-color: #307672;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+h1 {
+  color: #e4eddb;
+  font-family: 'montserrat', san-serif;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #0c3236;
+}
+.image-container {
+  margin: -120px 0 0 50px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  background-image: url("itsme.jpg");
+  background-color: #0dc2b3;
+  border-radius: 10px;
+  display: flex;
+}
+.side-container {
+  margin: 0 0 60px 20px;
+  width: 20%;
+  height: 1400px;
+  position: absolute;
+  z-index: 1;
+  background-color: #144d53;
+}
+.side-content {
+  font-family: 'Varela Round', sans-serif;
+  margin-top: -25%;
+  padding: 65% 10% 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-around;
+}
+.right-container {
+  width: 80%;
+  height: relative;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #385757;
+}
+.right-container .box {
+  width: 300px;
+  height: 300px;
+  padding: 1.5%;
+  margin: 10% 50%;
+  background-color: #0dc2b3;
+}
