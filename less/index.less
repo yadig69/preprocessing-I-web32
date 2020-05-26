@@ -62,21 +62,23 @@ html, body {
 
 // colors
 @image-bdc: #0dc2b3;
+@workFontColor: #0a857a;
 @heading-bgc: #307672;
 @side-bgc: #144d53;
 @main-color: #e4eddb;
 @work-bgc: #385757;
 @h2Color: #e2ba08;
 @h3Color: #0c3236;
-// font family settings
+// font settings
 @h1-font-size: 3rem;
+@navFontSize: 1rem;
 @main-font: 'Varela Round', sans-serif;
 @heading-font: 'montserrat', san-serif;
 
 //image styles
 
 @image-width: 200px;
-@image-height: 200px;
+// @image-height: 200px;
 
 // div styles
 
@@ -108,73 +110,70 @@ h2 {
 
 h3 {
 	font-size: 1.5rem;
-	color: @h3Color;
+	color: @workFontColor;
 }
 
 
 
-// .container {
-// 	// display: flex;
-// }
+
 
 main {
 	display: flex;
 }
 
-.header-container {
+header {
 	width: @main-width;
 	height: @main-height;
 	padding: 50px;
 	background-color: @heading-bgc;
 	display: flex;
-	
+	flex-direction: column;
 	justify-content: center;
 	
 
 	h1 {
+		padding-bottom: 2.5%;
 		color: @main-color;
 		font-family: @heading-font;
 		font-size: @h1-font-size;
 		display: flex;
-		justify-content: center;
+		 align-self: center;
 
 	}
 
-
-}
-
-.nav-container {
-
-	width: 10%;
-	display: flex;
-	align-items: flex-end;
-	
-
-
 	.nav-bar {
+		width: 70%;
 		display: flex;
-		
+		align-items: flex-end;
+		justify-content: space-between;
+		 align-self: flex-end;
 
-      
+
 		a {
+			padding: 5% 5% 0 5%;
 			font-family: @main-font;
+			color: @main-color;
 			text-decoration: none;
-			justify-content: space-between;
+			font-size: @navFontSize;
 			
+			&:hover {
+				color: @h2Color;
+				border-bottom: 1px solid @h2Color;
+			}
 
 		}
 
 	}
+
+
 }
 
 
 
 
-
-.image-container {
-	margin: -120px 0 0 50px;
+img {
+	margin: -120px 0 2% 50px;
 	width: @image-width;
-	height: @image-height;
 	position: absolute;
 	z-index: 2;
 	background-image: url("itsme.jpg");
@@ -190,37 +189,36 @@ main {
 	height: @side-height;
 	position: absolute;
 	z-index: 1;
-	border-bottom: 1px solid grey;
 	background-color: @side-bgc;
 
+	.side-content {
+		margin-top: 7%;
+		width: 80%;
+		line-height: 1;
+		font-family: @main-font;
+		color: @main-color;
+		padding: 25% 10% 5%;
+		background-color: #8b919179;
+		display: flex;
+		border-radius: 50px;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
 }
 
-// img {
-// width:200px;
-// height:200px;
-// }
 
-.side-content {
-	font-family: @main-font;
-	margin-top: -25%;
-	padding: 65% 10% 1.5%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-	align-content: space-around;
-	
-}
+
+
 
 .right-container {
 	width: @work-width;
 	height: @work-height;
-	
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-
 	background-color: @work-bgc;
 
 	.box {
@@ -228,6 +226,8 @@ main {
 		height: 300px;
 		padding: 1.5%;
 		margin: 10% 80%;
+		color: @main-color;
+		font-family: @main-font;
 		background-color: @image-bdc ;
 		border-radius: @borderRadius;
 
