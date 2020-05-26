@@ -148,6 +148,16 @@ body {
   font-display: swap;
   src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoA.ttf) format('truetype');
 }
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2rem;
+  line-height: 2.5;
+  color: #e2ba08;
+}
+h3 {
+  font-size: 1.5rem;
+  color: #0c3236;
+}
 main {
   display: flex;
 }
@@ -157,21 +167,27 @@ main {
   padding: 50px;
   background-color: #307672;
   display: flex;
-  justify-content: space-around;
   justify-content: center;
 }
-h1 {
+.header-container h1 {
   color: #e4eddb;
   font-family: 'montserrat', san-serif;
   font-size: 3rem;
   display: flex;
   justify-content: center;
 }
-h2 {
+.nav-container {
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+.nav-container .nav-bar {
+  display: flex;
+}
+.nav-container .nav-bar a {
   font-family: 'Varela Round', sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.5;
-  color: #0c3236;
+  text-decoration: none;
+  justify-content: space-between;
 }
 .image-container {
   margin: -120px 0 0 50px;
@@ -190,6 +206,7 @@ h2 {
   height: 1400px;
   position: absolute;
   z-index: 1;
+  border-bottom: 1px solid grey;
   background-color: #144d53;
 }
 .side-content {
@@ -212,9 +229,10 @@ h2 {
   background-color: #385757;
 }
 .right-container .box {
-  width: 300px;
+  width: 500px;
   height: 300px;
   padding: 1.5%;
-  margin: 10% 50%;
+  margin: 10% 80%;
   background-color: #0dc2b3;
+  border-radius: 5px;
 }
