@@ -203,16 +203,18 @@ img {
   z-index: 2;
   background-image: url("itsme.jpg");
   background-color: #0dc2b3;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
 }
 .side-container {
-  margin: 0 0 60px 20px;
   width: 20%;
   height: 1400px;
   position: absolute;
   z-index: 1;
   background-color: #144d53;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .side-container .side-content {
   margin-top: 7%;
@@ -223,7 +225,7 @@ img {
   padding: 25% 10% 5%;
   background-color: #8b919179;
   display: flex;
-  border-radius: 50px;
+  border-radius: 5px;
   flex-direction: column;
   justify-content: center;
 }
@@ -233,7 +235,8 @@ img {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  border-right: 5.5px solid #0dc2b3;
   background-color: #385757;
 }
 .right-container .box {
