@@ -197,8 +197,8 @@ header .nav-bar a:hover {
   border-bottom: 1px solid #e2ba08;
 }
 img {
-  margin: -120px 0 2% 50px;
-  width: 200px;
+  margin: -10% 0 2% 10%;
+  width: 13%;
   position: absolute;
   z-index: 2;
   background-image: url("itsme.jpg");
@@ -240,9 +240,8 @@ img {
   background-color: #385757;
 }
 .right-container .box {
-  width: 500px;
-  height: 300px;
-  padding: 1.5%;
+  width: 50%;
+  padding: 2.5%;
   margin: 10% 80%;
   color: #e4eddb;
   font-family: 'Varela Round', sans-serif;

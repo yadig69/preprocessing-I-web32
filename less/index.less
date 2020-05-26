@@ -77,7 +77,7 @@ html, body {
 
 //image styles
 
-@image-width: 200px;
+@image-width: 13%;
 // @image-height: 200px;
 
 // div styles
@@ -112,7 +112,7 @@ h3 {
 }
 
 
-
+//****************************************
 
 
 main {
@@ -157,20 +157,20 @@ header {
 			&:hover {
 				color: @h2Color;
 				border-bottom: 1px solid @h2Color;
-			}// this closes a:hover 
+			}// this closes a:hover .....
 
-		}// this closes a
+		}// this closes a .....
 
-	}// this closes nav-bar
+	}// this closes nav-bar .....
 
-
-}// this closes the header
+}// this closes the header .....
 
 
 
 
 img {
-	margin: -120px 0 2% 50px;
+
+	margin: -10% 0 2% 10%;
 	width: @image-width;
 	position: absolute;
 	z-index: 2;
@@ -206,13 +206,9 @@ img {
 		flex-direction: column;
 		justify-content: center;
 
-	}
+	}// this closes off .side-content
 
-}
-
-
-
-
+}// this closes off .side-container
 
 .right-container {
 	width: @work-width;
@@ -225,9 +221,8 @@ img {
 	background-color: @work-bgc;
 
 	.box {
-		width: 500px;
-		height: 300px;
-		padding: 1.5%;
+		width: 50%;
+		padding: 2.5%;
 		margin: 10% 80%;
 		color: @main-color;
 		font-family: @main-font;
@@ -236,5 +231,9 @@ img {
 
 
 	}
+
+}
+
+@media(max-width: 500px) {
 
 }
