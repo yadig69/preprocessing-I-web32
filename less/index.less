@@ -50,10 +50,190 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 html, body {
     height: 100%;
 }
+// variables 
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Varela+Round&display=swap');
+
+// colors
+@image-bdc: #0dc2b3;
+@workFontColor: #0a857a;
+@heading-bgc: #307672;
+@side-bgc: #144d53;
+@main-color: #e4eddb;
+@work-bgc: #385757;
+@h2Color: #e2ba08;
+@h3Color: #0c3236;
+// font settings
+@h1-font-size: 3rem;
+@navFontSize: 1rem;
+@main-font: 'Varela Round', sans-serif;
+@heading-font: 'montserrat', san-serif;
+
+//image styles
+
+@image-width: 13%;
+// @image-height: 200px;
+
+// div styles
+
+@borderRadius: 5px;
+
+
+@main-width: 100%;
+@main-height: 200px;
+
+@side-width: 20%;
+@side-height: 1400px;
+
+@line-height: 2;
+
+
+//side content
+@work-width: 80%;
+@work-height: relative;
+
+
+h2 {
+	font-family: @main-font;
+	font-size: 2rem;
+	line-height: 2.5;
+	color: @h2Color;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: @workFontColor;
+}
+
+
+//****************************************
+
+
+main {
+	display: flex;
+}
+
+header {
+	width: @main-width;
+	height: @main-height;
+	padding: 50px;
+	background-color: @heading-bgc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+
+	h1 {
+		padding-bottom: 2.5%;
+		color: @main-color;
+		font-family: @heading-font;
+		font-size: @h1-font-size;
+		display: flex;
+		align-self: center;
+
+	}// this closes h1 
+
+	.nav-bar {
+		width: 70%;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		align-self: flex-end;
+
+
+		a {
+			padding: 5% 5% 0 5%;
+			font-family: @main-font;
+			color: @main-color;
+			text-decoration: none;
+			font-size: @navFontSize;
+			
+			&:hover {
+				color: @h2Color;
+				border-bottom: 1px solid @h2Color;
+			}// this closes a:hover .....
+
+		}// this closes a .....
+
+	}// this closes nav-bar .....
+
+}// this closes the header .....
+
+
+
+
+img {
+
+	margin: -10% 0 2% 10%;
+	width: @image-width;
+	position: absolute;
+	z-index: 2;
+	background-image: url("itsme.jpg");
+	background-color: @image-bdc;
+	border-radius: @borderRadius;
+	display: flex;
+
+}
+
+.side-container {
+	
+	width: @side-width;
+	height: @side-height;
+	position: absolute;
+	z-index: 1;
+	background-color: @side-bgc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+	.side-content {
+		margin-top: 7%;
+		width: 80%;
+		line-height: 1;
+		font-family: @main-font;
+		color: @main-color;
+		padding: 25% 10% 5%;
+		background-color: #8b919179;
+		display: flex;
+		border-radius: @borderRadius;
+		flex-direction: column;
+		justify-content: center;
+
+	}// this closes off .side-content
+
+}// this closes off .side-container
+
+.right-container {
+	width: @work-width;
+	height: @work-height;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-right: 5.5px solid @image-bdc;
+	background-color: @work-bgc;
+
+	.box {
+		width: 50%;
+		padding: 2.5%;
+		margin: 10% 80%;
+		color: @main-color;
+		font-family: @main-font;
+		background-color: @image-bdc ;
+		border-radius: @borderRadius;
+
+
+	}
+
+}
+
+@media(max-width: 500px) {
+
+}
